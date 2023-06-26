@@ -58,6 +58,8 @@ class Kasa:
             await self.devices.get(device_name)['device'].turn_off()
 
     def toggle(self, device_name: str) -> None:
+        if not self.devices:
+            self.discover_devices()
         current_state = self.devices.get(device_name)['state']
         if current_state:
             self.turn_off(device_name)
