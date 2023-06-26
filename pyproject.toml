@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kasa-sdk-python"
-version = "0.0.2"
+name = "kasa_sdk_python"
+version = "0.0.3"
 authors = [
     { name="Naphtali Gilead", email="naphtul@hotmail.com" },
 ]
