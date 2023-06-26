@@ -9,7 +9,6 @@ logging.basicConfig(level=logging.INFO)
 class Kasa:
     def __init__(self):
         self.devices = {}
-        self.event_loop = asyncio.get_event_loop()
 
     def discover_devices(self) -> dict:
         devices = asyncio.run(Discover.discover())
